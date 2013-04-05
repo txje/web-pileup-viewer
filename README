@@ -1,0 +1,9 @@
+WEB GENOME VIEWER (WGV)
+
+Server
+    Web server (any)
+    Python (2.6-2.7) TCP-level server to accept and process Websocket communications
+
+Client
+    HTML/Javascript
+    - using Websocket

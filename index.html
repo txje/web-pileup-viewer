@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <title>WGV 0.0.2</title>
+        <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+        <script src='js/main.js'></script>
+        <link href='css/main.css' rel='stylesheet' type='text/css'/>
+    </head>
+    <body>
+        <canvas id='graphics' class='graphics'>
+            Your browser does not support canvas, you should get a new one. Try Chrome or Firefox.
+        </canvas>
+        
+        <div id='console' class='console'>
+            Web Genome Viewer 0.0.2
+            <br/>
+            [ console ]
+            <br/>
+            <br/>
+            connections: <div id='conn' style='display:inline'>0</div>
+            <br/>
+            <div style='display:inline;'>(if this number is large, you [or we] may be in trouble)</div>
+            <br/>
+        </div>
+        
+        <div id='controls' class='controls'>
+            Web Genome Viewer --
+            <div style='display:inline; cursor:pointer;' onclick="$('#console').toggle()">[ console ]</div>
+            [ chrom ] <select id='refs' class='selector'></select>
+            [ start ] <input id='startpos' type='text' class='txtinput' value='5000000'/>
+            [ end ] <input id='endpos' type='text' class='txtinput' value='5004000'/>
+            <input type='button' class='btn' value='update' onclick='update()'/>
+            <!--
+            <input type='button' class='btn' value='&lt;' onclick='pan(-0.25)'/>
+            <input type='button' class='btn' value='&gt;' onclick='pan(0.25)'/>
+            -->
+            <input type='button' class='btn' value='+' onclick='zoom(0.5)'/>
+            <input type='button' class='btn' value='-' onclick='zoom(2)'/>
+            <input type='button' class='btn' value='disconnect' onclick='disconnect()'/>
+        </div>
+        
+        <div style='position:absolute; margin:auto; top:75px; width:500px; text-align:center; font-family:monospace; color:#FFFFFF' onclick="this.style.display='none'">
+            &lt;-- Click & Drag --&gt;
+        </div>
+        
+    </body>
+</html>

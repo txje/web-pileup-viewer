@@ -1,0 +1,71 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.console {
+    font-family: monospace;
+    background-color: #000000;
+    color: #00AA00;
+    padding: 10px;
+    opacity: 0.5;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    height: 600px;
+    overflow: auto;
+    display: none;
+}
+
+.controls {
+    background-color: #000000;
+    color: #FFFFFF;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    font-family: monospace;
+    padding: 5px;
+}
+
+.graphics {
+    background-color: #000000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.txtinput {
+    background: inherit;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    font-family: inherit;
+    width: 80px;
+    color: inherit;
+}
+
+.selector {
+    background: inherit;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    font-family: inherit;
+    color: inherit;
+}
+
+.selector option {
+    background: inherit;
+}
+
+.btn {
+    padding: 5px;
+    font-family: inherit;
+    background: inherit;
+    border: 1px solid #FFFFFF;
+    color: inherit;
+    cursor: pointer;
+}
