@@ -1,9 +1,27 @@
-WEB GENOME VIEWER (WGV)
+Copyright (c) 2012 Jeremy Wang
+Available under an MIT License (see LICENSE)
 
-Server
-    Web server (any)
-    Python (2.6-2.7) TCP-level server to accept and process Websocket communications
 
-Client
-    HTML/Javascript
-    - using Websocket
+github.com/txje/web-pileup-viewer
+
+aka Web-based NGS (next-generation sequencing) Pileup Viewer
+
+aka WEB GENOME VIEWER (WGV)
+
+
+Prerequisites:
+    Server
+        Web server (any) [Apache]
+        Python 2.6+
+        pysam
+
+    Client
+        HTML5 with WebSocket support
+        Recent versions of WebKit- and Gecko-based browsers are known to work
+
+Setup:
+    js/main.js, line 321 should indicate the port on which wgv.py listens for WebSocket connections
+    wgv.py, line 80 should indicate the path to the BAM file you want to serve (there should also exist a .bai index file)
+
+    index.html should be exposed through some web server
+    wgv.py should run (as a service?) to serve WebSocket connections

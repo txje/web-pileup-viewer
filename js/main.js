@@ -318,7 +318,7 @@ function App() {
         s.close();
     }
 
-    ws_server = 'csbio-desktop008.csbio.unc.edu:8080'
+    ws_server = 'localhost:8080'
 
     var s = new Socket("ws://" + ws_server + "/", attacher(this, callback));
     c.write('connecting...');
